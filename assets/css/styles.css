@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0f1b4c;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+/* Common */
+
+.content {
+  width: 1110px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 98px;
+  padding: 18px 16px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* ==================== Header =========================*/
+
+.header {
+  position: relative;
+  background: #e6f0ff;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 34px;
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 50px;
+}
+
+.navbar .actions {
+  margin-left: auto;
+}
+
+.navbar ul a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #4f5361;
+  padding: 8px 14px;
+}
+
+.navbar .action-link {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 21px;
+  color: var(--primary-color);
+}
+
+.navbar .action-btn {
+  padding: 13px 16px;
+  margin-left: 18px;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  margin-top: 130px;
+}
+
+.hero .sub-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  color: #687691;
+}
+
+.hero .title {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1.19;
+  color: #000336;
+  margin-top: 8px;
+}
+
+.hero .info {
+  width: 51%;
+}
+
+.hero .desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #5a6473;
+  margin-top: 30px;
+}
+
+.hero-cta {
+  min-width: 170px;
+  margin-top: 40px;
+}
+
+.hero-img {
+  position: absolute;
+  right: calc((100vw - 1110px) / 2 - 100px);
+  bottom: 0;
+}
+
+/* ======================== Clients ======================== */
+
+.clients {
+  margin-top: 120px;
+}
+
+.clients .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .desc {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 125%;
+  text-align: right;
+  color: #7d8589;
+}
+
+.row-desc {
+  margin-top: 23px;
+}
+
+.clients .images {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========================= GUIDES ===================== */
+
+.guides {
+  margin-top: 200px;
+}
+
+.guides .sub-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 100%;
+  text-align: center;
+  color: #000339;
+}
+
+.guides .sub-title::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.guides .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 188%;
+  text-align: center;
+  color: #5a6473;
+  margin-top: 20px;
+  width: 460px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.guides .list-guides {
+  width: 685px;
+  max-width: 100%;
+  display: flex;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.guides .list-guides .guides-item .img-giudes {
+  min-width: 48px;
+}
+
+.guides .list-guides .guides-item {
+  min-width: 133px;
+  min-height: 127px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guides .list-guides .guides-item .links .link-guides {
+  margin-right: 8px;
+}
+
+.guides .list-guides .guides-item .title-guides {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  text-align: center;
+  color: #3b3c45;
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.guides .list-guides .guides-item .link-guides {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 21px;
+  text-align: center;
+  color: #0689ff;
+  margin-top: 10px;
+}
+
+.guides-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.guides-cta a {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.guides-cta .btn {
+  min-width: 170px;
+  border-radius: 12px;
+}
+
+/* ========================= Featured =========================== */
+.featured {
+  margin-top: 120px;
+  /* width: 100vw; */
+  height: auto;
+  left: 0px;
+  top: 0px;
+  padding: 110px 0;
+  background: #f5fafe;
+}
+
+.featured header .featured-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1;
+  color: #000339;
+}
+
+.featured header .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5a6473;
+}
+
+.featured header .featured-links {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured header .featured-links .link {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #0689ff;
+}
+
+.featured header .featured-links .link img {
+  margin-left: 8px;
+}
+
+.faetured-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faetured-list .faetured-item {
+  width: 350px;
+  max-width: 100%;
+  height: 357px;
+  left: 165px;
+  top: 260px;
+  background: #ffffff;
+  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+  border-radius: 12px;
+}
+
+.faetured-list .faetured-item .info-thumb {
+  padding: 17px 20px;
+}
+
+.faetured-list .faetured-item .info-thumb .title-thumb {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  color: #000339;
+}
+
+.faetured-list .faetured-item .info-thumb .desc-thumb {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 21px;
+  margin-top: 11px;
+  color: #a3a6ab;
+}
+
+.faetured-list .faetured-item .info-thumb .item-icons {
+  margin-top: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faetured-list .faetured-item .icon {
+  display: flex;
+  align-items: center;
+}
+
+.faetured-list .faetured-item .icon span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+  margin-left: 10px;
+}
+
+/* =============================== stats ====================================== */
+
+.stats {
+  margin-top: 75px;
+  padding: 50px 0;
+}
+
+.stats .content {
+  width: 1017px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-top {
+  width: 100%;
+}
+
+.stats .content .stats-info,
+.stats .content .stats-blog {
+  width: 50%;
+}
+
+.stats-top {
+  display: flex;
+}
+
+.stats .content .stats-top .stats-blog .blog-img img {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.stats .content .stats-top .stats-info {
+  padding: 79px 0 0 165px;
+}
+
+.stats .content .stats-top .stats-info .title {
+  position: relative;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  /* or 129% */
+  color: #000339;
+  width: 269px;
+}
+
+.stats .content .stats-top .stats-info .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 188%;
+  color: #5a6473;
+  margin-top: 20px;
+  width: 309px;
+}
+
+.stats-info .title::before {
+  position: absolute;
+  content: "";
+  width: 41px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+  top: -10px;
+}
+
+.blog-info .info .count {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #000339;
+}
+
+.stats-blog .blog-info .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-blog .blog-info {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 45px 22px 40px 22px;
+  width: 239px;
+  height: 252px;
+  background: #ffffff;
+  box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.stats-blog .blog-info .desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a7a7a7;
+  margin-top: 8px;
+}
+
+.stats-blog .blog-info .line {
+  width: 193.62px;
+  height: 1.2px;
+  background: #e9e9e9;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.stats-blog .blog-info .users {
+  width: 187px;
+  /* height: 49px; */
+}
+
+.stats-blog {
+  position: relative;
+}
+
+.stats-bot .content {
+  width: 985px;
+}
+
+.stats-price h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.stats-price p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7b8087;
+  margin-top: 22px;
+}
+
+.stats-bot {
+  margin-top: 110px;
+}
+
+.stats-bot .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============================== subscription ================================ */
+
+.subscription {
+  margin-top: 90px;
+}
+
+.subscription .body {
+  position: relative;
+  height: 370px;
+  background: #063183;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.subscription .container {
+  padding: 0 80px;
+}
+
+.subscription .container .title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.subscription .container .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.75;
+  margin-top: 15px;
+}
+
+.subscription .container .btn {
+  min-width: 151px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #002366;
+  margin-top: 20px;
+}
+
+.subscription .phone {
+  position: absolute;
+  bottom: 0;
+  right: 221px;
+}
+
+/* ================================ footer ===================================== */
+
+.footer {
+  margin-top: 55px;
+  padding: 50px 0 58px;
+}
+
+.footer .row-top {
+  display: flex;
+  gap: 185px;
+}
+
+.footer .heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c1d;
+  margin-bottom: 40px;
+}
+
+.footer .column ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7a7a7e;
+}
+
+.footer .column ul li {
+  margin-bottom: 21px;
+}
+
+.footer .column p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7a7e;
+  margin-bottom: 40px;
+}
+
+.footer .column .social-link {
+  margin-right: 16px;
+}
+
+.ending {
+  margin-top: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
